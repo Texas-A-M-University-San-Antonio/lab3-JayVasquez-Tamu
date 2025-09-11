@@ -19,10 +19,9 @@ public class InClass3_Jay_Vasquez
         //declare these variables as double data.
 
         // Step 2: Read the user's input and store it in a variable.
-       System.out.println("Please enter the length of the side of the cube ");
+        System.out.println("Please enter the length of the side of the cube: ");
         side = input.nextDouble();
         
-
         // Step 3: Use an appropriate method to determine the volume of the cube.
         volume = Math.pow(side, 3);
 

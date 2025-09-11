@@ -13,19 +13,21 @@ public class Lab3_Jay_Vasquez
     {
         Scanner input = new Scanner(System.in);
 
-        double initialValue, interestRate, finalValue;
-        int numberOfYearsElapsed;
+        double initialHomeValue, interestRate, finalHomeValue;
+        int elapsedYears;
 
-        initialValue = input.nextDouble();
         System.out.println("Please enter the initial value of the home:  ");
-
-        numberOfYearsElapsed = input.nextInt();
+        initialHomeValue = input.nextDouble();
+        
         System.out.println("Please enter the number of years elapsed: ");
-
+        elapsedYears = input.nextInt();
+        
+        System.out.println("Please enter the interest rate: ");
         interestRate = input.nextDouble();
-        System.out.println("Please enter the interest rate in decimals: interestRate++");
 
-        finalValue = initialValue * Math.pow(interestRate, numberOfYearsElapsed);
-        System.out.println("The final value of the home is: ");
+        interestRate = interestRate / 100.0;
+        
+        finalHomeValue = initialHomeValue * Math.pow(1 + interestRate, elapsedYears);
+        System.out.println("The final value of the home is " + finalHomeValue);
     }
 } 
