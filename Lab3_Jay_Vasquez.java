@@ -18,17 +18,17 @@ public class Lab3_Jay_Vasquez
         //Here, I initiate the utility Scanner for the user.
 
         double initialHomeValue, interestRate, finalHomeValue;
-        final double ELAPSED_YEARS;
+        int elapsedYears;
         // I declare the variables initialHomeValue, interestRate and finalHomeValue and ELAPSED_YEARS.
         //These 3 variables are floating points so I declare them as double.
-        //ELAPSED_YEARS is a pure constant so I declare as a final.
+        //elapsedYears is a constant so I declare it as a int.
 
         System.out.println("Please enter the initial value of the home:  ");
         initialHomeValue = input.nextDouble();
         //The user is now prompted to enter the variable for InitialHomeValue.
         
         System.out.println("Please enter the number of years elapsed: ");
-        ELAPSED_YEARS = input.nextInt();
+        elapsedYears = input.nextInt();
         //The User is also prompted to enter the variable for ELAPSED_YEARS.
 
         System.out.println("Please enter the interest rate: ");
@@ -36,12 +36,10 @@ public class Lab3_Jay_Vasquez
         //The user is again prompted to enter the variable for interestRate.
 
         interestRate /= 100;
-        interestRate += 1;
-        //I use assigment operators to divide interestRate by 100 and add 1.
-        //The assigments changed interestRate to a decimal and add 1.
+        //I use assigment operators to multiply interestRate and change to decimal.
         //This is a necessary assigment to prepare for the formula.
 
-        finalHomeValue = initialHomeValue * Math.pow(interestRate, ELAPSED_YEARS);
+        finalHomeValue = initialHomeValue * Math.pow(1 + interestRate, elapsedYears);
         //This is the formula to calculate the finalHomeValue.
 
         System.out.println("The final value of the home is " + finalHomeValue);
