@@ -1,8 +1,8 @@
 /**
 * Name: [Jay Vasquez]
-* Date: [Enter Today's Date]
+* Date: [09/16/2025]
 * Purpose: InClass 3 - 
-* [Write a description about this InClass 3 program]
+* [I am writing a program to calculate the volume and surface area of a cube.]
 */
 // Don't forget to import and declare a Scanner for user input.
 import java.util.Scanner;
